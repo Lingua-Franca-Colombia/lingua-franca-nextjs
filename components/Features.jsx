@@ -48,7 +48,7 @@ import {
                 bg ="brand.100"
                 color="white"
                 size="md"
-                _hover={{ textDecoration: "none" }}
+                _hover={{ textDecoration: "none", bg: "brand.300" }}
               >
                 Chatea con nosotros
               </Button>

@@ -18,9 +18,9 @@ import {
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { Image } from "@chakra-ui/react";
-import Logo from "../assets/logo.png"
+//import Logo from "../assets/logo.png"
 
-const NavLink = ({ children }) => (
+/* const NavLink = ({ children }) => (
   <Link
     px={2}
     py={1}
@@ -33,28 +33,14 @@ const NavLink = ({ children }) => (
   >
     {children}
   </Link>
-);
+); */
 
 export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <>
-      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4} py={3}>
-        <Flex h={32} alignItems={"center"} justifyContent={"center"}>
-          <Box>
-            <Image src={Logo} alt="Lingua Franca" />
-          </Box>
-
-          {/* <Flex alignItems={"center"}>
-            <Stack direction={"row"} spacing={7}>
-              <Button onClick={toggleColorMode}>
-                {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-              </Button>
-            </Stack>
-          </Flex> */}
-        </Flex>
-      </Box>
-    </>
+    <Flex alignItems={"center"} justifyContent={"center"}>
+        <Image src="/logo.svg" alt="Lingua Franca" />
+    </Flex>
   );
 }

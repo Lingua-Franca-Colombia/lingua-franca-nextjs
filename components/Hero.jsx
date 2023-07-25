@@ -52,7 +52,7 @@ import {
                 bg={"brand.200"}
                 rounded={"full"}
                 color={"white"}
-                _hover={{ bg: "green.500" }}
+                _hover={{ bg: "brand.400" }}
                 onClick={handleClick}
               >
                 Sobre Nosotros
