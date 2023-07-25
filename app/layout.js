@@ -7,8 +7,11 @@ import SmallWithSocial from "@/components/Footer"
 const theme = extendTheme({
   colors:{
     brand:{
+      label: "#151515",
       100: "#5e17eb",
-      200: "#1bd527"
+      200: "#1bd527",
+      300: "#8956F0",
+      400: "#5CEB65"
     }
   }
 })
