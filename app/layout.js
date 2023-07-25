@@ -3,6 +3,7 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react"
 
 import Nav from "@/components/NavBar"
 import SmallWithSocial from "@/components/Footer"
+import Head from "next/head"
 
 const theme = extendTheme({
   colors:{
