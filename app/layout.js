@@ -3,6 +3,7 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react"
 
 import Nav from "@/components/NavBar"
 import SmallWithSocial from "@/components/Footer"
+import Head from "next/head"
 
 const theme = extendTheme({
   colors:{
@@ -19,11 +20,12 @@ const theme = extendTheme({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
+      <Head>
+        <title>Lingua Franca Asesorias</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="description" content="Lingua Franca - Idiomas y Desarrollo" />
+        <link rel="icon" href="/icon.svg" />
+      </Head>
 
       <body>
         <ChakraProvider theme={theme}>
